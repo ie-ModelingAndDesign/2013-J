@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		662706B7182B272B001E1B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662706B6182B272B001E1B8E /* Foundation.framework */; };
+		662706B9182B272B001E1B8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662706B8182B272B001E1B8E /* CoreGraphics.framework */; };
+		662706BB182B272B001E1B8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662706BA182B272B001E1B8E /* UIKit.framework */; };
+		662706C1182B272C001E1B8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 662706BF182B272C001E1B8E /* InfoPlist.strings */; };
+		662706C3182B272C001E1B8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 662706C2182B272C001E1B8E /* main.m */; };
+		662706C7182B272C001E1B8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 662706C6182B272C001E1B8E /* AppDelegate.m */; };
+		662706CA182B272C001E1B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662706C8182B272C001E1B8E /* Main.storyboard */; };
+		662706CD182B272C001E1B8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 662706CC182B272C001E1B8E /* ViewController.m */; };
+		662706CF182B272C001E1B8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662706CE182B272C001E1B8E /* Images.xcassets */; };
+		662706D6182B272C001E1B8E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662706D5182B272C001E1B8E /* XCTest.framework */; };
+		662706D7182B272C001E1B8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662706B6182B272B001E1B8E /* Foundation.framework */; };
+		662706D8182B272C001E1B8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662706BA182B272B001E1B8E /* UIKit.framework */; };
+		662706E0182B272C001E1B8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 662706DE182B272C001E1B8E /* InfoPlist.strings */; };
+		662706E2182B272C001E1B8E /* omikuziTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 662706E1182B272C001E1B8E /* omikuziTests.m */; };
+		66A02E011846DE8300EF13AF /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A02E001846DE8300EF13AF /* ViewController2.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		662706D9182B272C001E1B8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 662706AB182B272B001E1B8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 662706B2182B272B001E1B8E;
+			remoteInfo = omikuzi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		662706B3182B272B001E1B8E /* omikuzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = omikuzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		662706B6182B272B001E1B8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		662706B8182B272B001E1B8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		662706BA182B272B001E1B8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		662706BE182B272C001E1B8E /* omikuzi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "omikuzi-Info.plist"; sourceTree = "<group>"; };
+		662706C0182B272C001E1B8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		662706C2182B272C001E1B8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		662706C4182B272C001E1B8E /* omikuzi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "omikuzi-Prefix.pch"; sourceTree = "<group>"; };
+		662706C5182B272C001E1B8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		662706C6182B272C001E1B8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		662706C9182B272C001E1B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		662706CB182B272C001E1B8E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		662706CC182B272C001E1B8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		662706CE182B272C001E1B8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		662706D4182B272C001E1B8E /* omikuziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = omikuziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		662706D5182B272C001E1B8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		662706DD182B272C001E1B8E /* omikuziTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "omikuziTests-Info.plist"; sourceTree = "<group>"; };
+		662706DF182B272C001E1B8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		662706E1182B272C001E1B8E /* omikuziTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = omikuziTests.m; sourceTree = "<group>"; };
+		66A02DFF1846DE8300EF13AF /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		66A02E001846DE8300EF13AF /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		662706B0182B272B001E1B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662706B9182B272B001E1B8E /* CoreGraphics.framework in Frameworks */,
+				662706BB182B272B001E1B8E /* UIKit.framework in Frameworks */,
+				662706B7182B272B001E1B8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		662706D1182B272C001E1B8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662706D6182B272C001E1B8E /* XCTest.framework in Frameworks */,
+				662706D8182B272C001E1B8E /* UIKit.framework in Frameworks */,
+				662706D7182B272C001E1B8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		662706AA182B272B001E1B8E = {
+			isa = PBXGroup;
+			children = (
+				662706BC182B272B001E1B8E /* omikuzi */,
+				662706DB182B272C001E1B8E /* omikuziTests */,
+				662706B5182B272B001E1B8E /* Frameworks */,
+				662706B4182B272B001E1B8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		662706B4182B272B001E1B8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				662706B3182B272B001E1B8E /* omikuzi.app */,
+				662706D4182B272C001E1B8E /* omikuziTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		662706B5182B272B001E1B8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				662706B6182B272B001E1B8E /* Foundation.framework */,
+				662706B8182B272B001E1B8E /* CoreGraphics.framework */,
+				662706BA182B272B001E1B8E /* UIKit.framework */,
+				662706D5182B272C001E1B8E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		662706BC182B272B001E1B8E /* omikuzi */ = {
+			isa = PBXGroup;
+			children = (
+				662706C5182B272C001E1B8E /* AppDelegate.h */,
+				662706C6182B272C001E1B8E /* AppDelegate.m */,
+				662706C8182B272C001E1B8E /* Main.storyboard */,
+				662706CB182B272C001E1B8E /* ViewController.h */,
+				662706CC182B272C001E1B8E /* ViewController.m */,
+				662706CE182B272C001E1B8E /* Images.xcassets */,
+				662706BD182B272B001E1B8E /* Supporting Files */,
+				66A02DFF1846DE8300EF13AF /* ViewController2.h */,
+				66A02E001846DE8300EF13AF /* ViewController2.m */,
+			);
+			path = omikuzi;
+			sourceTree = "<group>";
+		};
+		662706BD182B272B001E1B8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				662706BE182B272C001E1B8E /* omikuzi-Info.plist */,
+				662706BF182B272C001E1B8E /* InfoPlist.strings */,
+				662706C2182B272C001E1B8E /* main.m */,
+				662706C4182B272C001E1B8E /* omikuzi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		662706DB182B272C001E1B8E /* omikuziTests */ = {
+			isa = PBXGroup;
+			children = (
+				662706E1182B272C001E1B8E /* omikuziTests.m */,
+				662706DC182B272C001E1B8E /* Supporting Files */,
+			);
+			path = omikuziTests;
+			sourceTree = "<group>";
+		};
+		662706DC182B272C001E1B8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				662706DD182B272C001E1B8E /* omikuziTests-Info.plist */,
+				662706DE182B272C001E1B8E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		662706B2182B272B001E1B8E /* omikuzi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 662706E5182B272C001E1B8E /* Build configuration list for PBXNativeTarget "omikuzi" */;
+			buildPhases = (
+				662706AF182B272B001E1B8E /* Sources */,
+				662706B0182B272B001E1B8E /* Frameworks */,
+				662706B1182B272B001E1B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = omikuzi;
+			productName = omikuzi;
+			productReference = 662706B3182B272B001E1B8E /* omikuzi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		662706D3182B272C001E1B8E /* omikuziTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 662706E8182B272C001E1B8E /* Build configuration list for PBXNativeTarget "omikuziTests" */;
+			buildPhases = (
+				662706D0182B272C001E1B8E /* Sources */,
+				662706D1182B272C001E1B8E /* Frameworks */,
+				662706D2182B272C001E1B8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				662706DA182B272C001E1B8E /* PBXTargetDependency */,
+			);
+			name = omikuziTests;
+			productName = omikuziTests;
+			productReference = 662706D4182B272C001E1B8E /* omikuziTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		662706AB182B272B001E1B8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "akira YONAHA";
+				TargetAttributes = {
+					662706D3182B272C001E1B8E = {
+						TestTargetID = 662706B2182B272B001E1B8E;
+					};
+				};
+			};
+			buildConfigurationList = 662706AE182B272B001E1B8E /* Build configuration list for PBXProject "omikuzi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 662706AA182B272B001E1B8E;
+			productRefGroup = 662706B4182B272B001E1B8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				662706B2182B272B001E1B8E /* omikuzi */,
+				662706D3182B272C001E1B8E /* omikuziTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		662706B1182B272B001E1B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662706CF182B272C001E1B8E /* Images.xcassets in Resources */,
+				662706C1182B272C001E1B8E /* InfoPlist.strings in Resources */,
+				662706CA182B272C001E1B8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		662706D2182B272C001E1B8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662706E0182B272C001E1B8E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		662706AF182B272B001E1B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662706CD182B272C001E1B8E /* ViewController.m in Sources */,
+				66A02E011846DE8300EF13AF /* ViewController2.m in Sources */,
+				662706C7182B272C001E1B8E /* AppDelegate.m in Sources */,
+				662706C3182B272C001E1B8E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		662706D0182B272C001E1B8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				662706E2182B272C001E1B8E /* omikuziTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		662706DA182B272C001E1B8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 662706B2182B272B001E1B8E /* omikuzi */;
+			targetProxy = 662706D9182B272C001E1B8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		662706BF182B272C001E1B8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				662706C0182B272C001E1B8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		662706C8182B272C001E1B8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				662706C9182B272C001E1B8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		662706DE182B272C001E1B8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				662706DF182B272C001E1B8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		662706E3182B272C001E1B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		662706E4182B272C001E1B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		662706E6182B272C001E1B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "omikuzi/omikuzi-Prefix.pch";
+				INFOPLIST_FILE = "omikuzi/omikuzi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		662706E7182B272C001E1B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "omikuzi/omikuzi-Prefix.pch";
+				INFOPLIST_FILE = "omikuzi/omikuzi-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		662706E9182B272C001E1B8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/omikuzi.app/omikuzi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "omikuzi/omikuzi-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "omikuziTests/omikuziTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		662706EA182B272C001E1B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/omikuzi.app/omikuzi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "omikuzi/omikuzi-Prefix.pch";
+				INFOPLIST_FILE = "omikuziTests/omikuziTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		662706AE182B272B001E1B8E /* Build configuration list for PBXProject "omikuzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				662706E3182B272C001E1B8E /* Debug */,
+				662706E4182B272C001E1B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		662706E5182B272C001E1B8E /* Build configuration list for PBXNativeTarget "omikuzi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				662706E6182B272C001E1B8E /* Debug */,
+				662706E7182B272C001E1B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		662706E8182B272C001E1B8E /* Build configuration list for PBXNativeTarget "omikuziTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				662706E9182B272C001E1B8E /* Debug */,
+				662706EA182B272C001E1B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 662706AB182B272B001E1B8E /* Project object */;
+}
