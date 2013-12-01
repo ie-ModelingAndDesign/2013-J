@@ -22,7 +22,7 @@
 
 - (IBAction)insert:(id)sender {
     [List addObject:@"moziretu"];
-    //TextFieldからもってきた文字列を配列に入れる
+    //入力ボタン
    }
 
 - (void)didReceiveMemoryWarning
