@@ -16,13 +16,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    omikujiList = [NSArray arrayWithObjects:@"大吉！",@"中吉",@"小吉",@"凶", nil];
-	// Do any additional setup after loading the view, typically from a nib.
+
 }
 
 - (IBAction)omikuji:(id)sender {
     rNum = arc4random() % 4;
-    result.text = [NSString stringWithFormat: @"%@",[omikujiList objectAtIndex:rNum]];
+    result.text = [NSString stringWithFormat: @"%@",[List objectAtIndex:rNum]];
+    [List removeObjectAtIndex: (NSUInteger) rNum];
+    //くじを引き表示し、引いたくじを配列から削除
 }
 
 - (void)didReceiveMemoryWarning

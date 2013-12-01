@@ -21,7 +21,7 @@
 		662706D8182B272C001E1B8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662706BA182B272B001E1B8E /* UIKit.framework */; };
 		662706E0182B272C001E1B8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 662706DE182B272C001E1B8E /* InfoPlist.strings */; };
 		662706E2182B272C001E1B8E /* omikuziTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 662706E1182B272C001E1B8E /* omikuziTests.m */; };
-		66A02E011846DE8300EF13AF /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A02E001846DE8300EF13AF /* ViewController2.m */; };
+		66A02E0C184B9AC200EF13AF /* insert.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A02E0B184B9AC200EF13AF /* insert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		662706DD182B272C001E1B8E /* omikuziTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "omikuziTests-Info.plist"; sourceTree = "<group>"; };
 		662706DF182B272C001E1B8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		662706E1182B272C001E1B8E /* omikuziTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = omikuziTests.m; sourceTree = "<group>"; };
-		66A02DFF1846DE8300EF13AF /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		66A02E001846DE8300EF13AF /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		66A02E0A184B9AC200EF13AF /* insert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insert.h; sourceTree = "<group>"; };
+		66A02E0B184B9AC200EF13AF /* insert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = insert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +122,8 @@
 				662706CC182B272C001E1B8E /* ViewController.m */,
 				662706CE182B272C001E1B8E /* Images.xcassets */,
 				662706BD182B272B001E1B8E /* Supporting Files */,
-				66A02DFF1846DE8300EF13AF /* ViewController2.h */,
-				66A02E001846DE8300EF13AF /* ViewController2.m */,
+				66A02E0A184B9AC200EF13AF /* insert.h */,
+				66A02E0B184B9AC200EF13AF /* insert.m */,
 			);
 			path = omikuzi;
 			sourceTree = "<group>";
@@ -254,8 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A02E0C184B9AC200EF13AF /* insert.m in Sources */,
 				662706CD182B272C001E1B8E /* ViewController.m in Sources */,
-				66A02E011846DE8300EF13AF /* ViewController2.m in Sources */,
 				662706C7182B272C001E1B8E /* AppDelegate.m in Sources */,
 				662706C3182B272C001E1B8E /* main.m in Sources */,
 			);

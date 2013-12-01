@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @interface ViewController : UIViewController{
-    NSArray *omikujiList;
+    NSMutableArray *List;
     int rNum;
     __weak IBOutlet UILabel *result;
 }
