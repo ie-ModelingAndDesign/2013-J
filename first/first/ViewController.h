@@ -10,7 +10,10 @@
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 - (IBAction)changeGreeting:(id)sender;
+- (IBAction)Output:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (copy,nonatomic) NSString *userName;
+@property (copy,nonatomic) NSMutableArray *hairetu;
+@property (nonatomic, assign) int countButton;
 @end

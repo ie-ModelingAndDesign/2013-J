@@ -13,11 +13,14 @@
 @end
 
 @implementation ViewController
+//変数の変化を共有的な
 @synthesize userName = _userName;
+@synthesize hairetu = _hairetu;
+@synthesize countButton;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,14 +30,34 @@
 }
 
 - (IBAction)changeGreeting:(id)sender {
+    //ボタンを押した回数をカウント
+    self.countButton = self.countButton+1;
+    //入力した文字をuserNameに入れる
     self.userName = self.textField.text;
-    NSString *nameString = self.userName;
-    if ([nameString length] == 0) {
-        nameString = @"Word";
+    //入力1回目のときの動作。エラーを消すために
+    if(self.countButton == 1){
+    _hairetu = [NSMutableArray arrayWithObjects:nil];
+    [_hairetu insertObject:self.userName atIndex:0];
     }
-    NSString *greeting = [[NSString alloc] initWithFormat:@"%@",nameString];
+    //配列に値を格納
+    [_hairetu insertObject:self.userName atIndex:self.countButton];
+    //これは意味ないであろう
+    if ([_hairetu[0] length] == 0) {
+        _hairetu[0] = @"Word";
+    }
+    //入力回数を出力
+    self.label.text = [NSString stringWithFormat:@"入力%d回",self.countButton];
+}
+    //出力ボタンを押したときの動作
+- (IBAction)Output:(id)sender {
+    //ボタンを押した回数からランダムで値をとる
+    int rand = random()%self.countButton+1;
+    //配列の中のランダムで選んだ位置の要素をとる
+    NSString *greeting = [[NSString alloc] initWithFormat:@"%@",_hairetu[rand]];
+    //ランダムで選んだ要素を出力
     self.label.text = greeting;
 }
+
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
     if (theTextField == self.textField) {
         [theTextField resignFirstResponder];
