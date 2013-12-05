@@ -22,7 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    _hairetu = [NSMutableArray arrayWithObjects:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,7 +38,7 @@
     self.userName = self.textField.text;
     //入力1回目のときの動作。エラーを消すために
     if(self.countButton == 0){
-    _hairetu = [NSMutableArray arrayWithObjects:nil];
+    //_hairetu = [NSMutableArray arrayWithObjects:nil];
     //[_hairetu insertObject:self.userName atIndex:0];
     }
     //配列に値を格納
