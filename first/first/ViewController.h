@@ -12,9 +12,10 @@
 - (IBAction)changeGreeting:(id)sender;
 - (IBAction)Output:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
-- (IBAction)Shuffle:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (copy,nonatomic) NSString *userName;
 @property (copy,nonatomic) NSMutableArray *hairetu;
 @property (nonatomic, assign) int countButton;
+@property (nonatomic, assign) int countButton2;
+@property (nonatomic, assign) int c;
 @end
