@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController <UITextFieldDelegate>
 - (IBAction)changeGreeting:(id)sender;
 - (IBAction)Output:(id)sender;
+- (IBAction)Shuffle:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (copy,nonatomic) NSString *userName;

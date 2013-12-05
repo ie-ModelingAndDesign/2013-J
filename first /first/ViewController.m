@@ -48,6 +48,12 @@
     //入力回数を出力
     self.label.text = [NSString stringWithFormat:@"入力%d回",self.countButton];
 }
+
+
+
+
+
+
     //出力ボタンを押したときの動作
 - (IBAction)Output:(id)sender {
     //ボタンを押した回数からランダムで値をとる
@@ -57,6 +63,12 @@
     //ランダムで選んだ要素を出力
     self.label.text = greeting;
 }
+
+//配列内の要素をシャッフルするメソッド
+- (IBAction)Shuffle:(id)sender {
+    
+}
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
     if (theTextField == self.textField) {
