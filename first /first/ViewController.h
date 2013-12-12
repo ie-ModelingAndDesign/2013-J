@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@interface ViewController : UIViewController <UITextFieldDelegate>//{
+   // IBOutlet UIButton *chanGreeting;
+
+//}
+//@property (retain,nonatomic) IBOutlet UIButton *changeGreeting;
 - (IBAction)changeGreeting:(id)sender;
 - (IBAction)Output:(id)sender;
+- (IBAction)again:(id)sender;
+- (IBAction)restart:(id)sender;
+
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (copy,nonatomic) NSString *userName;

@@ -14,6 +14,7 @@
 
 @implementation ViewController
 //変数の変化を共有的な
+//@synthesize changeGreeting;
 @synthesize userName = _userName;
 @synthesize hairetu = _hairetu;
 @synthesize countButton;
@@ -22,12 +23,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+  //  self.changeGreeting.hidden = NO;
     // Dispose of any resources that can be recreated.
 }
 
@@ -54,12 +56,23 @@
 }
     //出力ボタンを押したときの動作
 - (IBAction)Output:(id)sender {
+    //格納ボタンを消そうとしたがわからん 12/12
+    BOOL check;
+    check = YES;
+    if(check){
+        //self.changeGreeting.hidden = YES;
+    }
+    //self.changeGreeting.hidden = YES;
+    //出力ボタン1回目に配列をシャッフル
     if (countButton2 == 0) {
-        for (uint i = 0; i < [_hairetu count]; ++i) {
+        uint i=0;
+        for (i = 0; i < [_hairetu count]; ++i) {
             int m = [_hairetu count] - i;
             int n = arc4random_uniform(m) + i;
             [_hairetu exchangeObjectAtIndex:i withObjectAtIndex:n];
         }
+        //配列の最後にendを入れる 12/12
+        [_hairetu insertObject:@"end" atIndex:i];
     }
     //ボタンを押した回数からランダムで値をとる
     //int rand = random()%self.countButton;
@@ -67,8 +80,29 @@
     NSString *greeting = [[NSString alloc] initWithFormat:@"%@",_hairetu[self.c]];
     //ランダムで選んだ要素を出力
     self.label.text = greeting;
-    self.c = self.c+1;
-    self.countButton2 = self.countButton2+1;
+    //12/12 出力している配列の文字列がendでない時のみインクリメントするよう変更
+    if([_hairetu count]-1 != self.c){
+        self.c = self.c+1;
+        self.countButton2 = self.countButton2+1;
+    }
+}
+
+//もう一度くじをひくボタン 12/12
+- (IBAction)again:(id)sender {
+    //変数初期か
+    self.c = 0;
+    self.countButton2 = 0;
+    //配列の最後のendを消す
+    [_hairetu removeLastObject];
+    self.label.text = [NSString stringWithFormat:@"もう一回"];
+}
+
+- (IBAction)restart:(id)sender {
+    _hairetu = [NSMutableArray arrayWithObjects:nil];
+    self.c = 0;
+    self.countButton2 = 0;
+    self.countButton=0;
+    self.label.text = [NSString stringWithFormat:@"リセット"];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
