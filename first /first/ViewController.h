@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate>//{
-   // IBOutlet UIButton *chanGreeting;
+@interface ViewController : UIViewController <UITextFieldDelegate>{
+    IBOutlet UIButton *chanGreeting;
 
-//}
-//@property (retain,nonatomic) IBOutlet UIButton *changeGreeting;
+}
+@property (retain,nonatomic) IBOutlet UIButton *changeGreeting;
 - (IBAction)changeGreeting:(id)sender;
 - (IBAction)Output:(id)sender;
 - (IBAction)again:(id)sender;

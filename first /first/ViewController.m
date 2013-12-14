@@ -54,15 +54,11 @@
     //入力回数を出力
     self.label.text = [NSString stringWithFormat:@"入力%d回",self.countButton];
 }
+
     //出力ボタンを押したときの動作
 - (IBAction)Output:(id)sender {
-    //格納ボタンを消そうとしたがわからん 12/12
-    BOOL check;
-    check = YES;
-    if(check){
-        //self.changeGreeting.hidden = YES;
-    }
-    //self.changeGreeting.hidden = YES;
+    //格納ボタンを非表示にする。 12/15
+    self.changeGreeting.hidden = YES;
     //出力ボタン1回目に配列をシャッフル
     if (countButton2 == 0) {
         uint i=0;
@@ -74,8 +70,6 @@
         //配列の最後にendを入れる 12/12
         [_hairetu insertObject:@"end" atIndex:i];
     }
-    //ボタンを押した回数からランダムで値をとる
-    //int rand = random()%self.countButton;
     //配列の中のランダムで選んだ位置の要素をとる
     NSString *greeting = [[NSString alloc] initWithFormat:@"%@",_hairetu[self.c]];
     //ランダムで選んだ要素を出力
@@ -96,14 +90,17 @@
     [_hairetu removeLastObject];
     self.label.text = [NSString stringWithFormat:@"もう一回"];
 }
-
+//リセットボタンを押したときの動作
 - (IBAction)restart:(id)sender {
     _hairetu = [NSMutableArray arrayWithObjects:nil];
     self.c = 0;
     self.countButton2 = 0;
     self.countButton=0;
     self.label.text = [NSString stringWithFormat:@"リセット"];
+    //出力ボタンを表示する。　12/15
+    self.changeGreeting.hidden = NO;
 }
+
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
     if (theTextField == self.textField) {
@@ -111,4 +108,5 @@
     }
     return YES;
 }
+
 @end
