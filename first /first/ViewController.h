@@ -11,9 +11,11 @@
 @interface ViewController : UIViewController <UITextFieldDelegate>{
     IBOutlet UIButton *chanGreeting;
     IBOutlet UIButton *again;
+    IBOutlet UIButton *output;
 }
 @property (retain,nonatomic) IBOutlet UIButton *changeGreeting;
 @property (retain,nonatomic) IBOutlet UIButton *again;
+@property (retain,nonatomic) IBOutlet UIButton *output;
 - (IBAction)changeGreeting:(id)sender;
 - (IBAction)Output:(id)sender;
 - (IBAction)again:(id)sender;

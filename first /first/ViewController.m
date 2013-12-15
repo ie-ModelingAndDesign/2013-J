@@ -16,6 +16,7 @@
 //変数の変化を共有的な
 @synthesize changeGreeting;
 @synthesize again;
+@synthesize output;
 @synthesize userName = _userName;
 @synthesize hairetu = _hairetu;
 @synthesize countButton;
@@ -26,6 +27,7 @@
     [super viewDidLoad];
     
         self.again.hidden = YES;
+        self.output.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,6 +39,7 @@
 }
 
 - (IBAction)changeGreeting:(id)sender {
+    self.output.hidden = NO;
     //ボタンを押した回数をカウント  countButtonの初めが0だったので変更12/5
     //self.countButton = self.countButton+1;
     //入力した文字をuserNameに入れる
@@ -107,6 +110,8 @@
     self.label.text = [NSString stringWithFormat:@"リセット"];
     //出力ボタンを表示する。　12/15
     self.changeGreeting.hidden = NO;
+    self.again.hidden = YES;
+    self.output.hidden = YES;
     
 }
 

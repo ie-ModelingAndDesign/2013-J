@@ -111,6 +111,7 @@
                         <outlet property="chanGreeting" destination="7KC-Oo-dfS" id="UoL-9R-mm0"/>
                         <outlet property="changeGreeting" destination="7KC-Oo-dfS" id="HE5-Oa-lB4"/>
                         <outlet property="label" destination="oH3-vB-jTu" id="Wma-qt-JHr"/>
+                        <outlet property="output" destination="eTi-A5-IJ5" id="tna-B3-m8Y"/>
                         <outlet property="textField" destination="TzK-3B-HLV" id="ia1-OI-SkB"/>
                     </connections>
                 </viewController>
