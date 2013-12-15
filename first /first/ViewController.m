@@ -14,7 +14,8 @@
 
 @implementation ViewController
 //変数の変化を共有的な
-//@synthesize changeGreeting;
+@synthesize changeGreeting;
+@synthesize again;
 @synthesize userName = _userName;
 @synthesize hairetu = _hairetu;
 @synthesize countButton;
@@ -23,7 +24,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+        self.again.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,6 +33,7 @@
     [super didReceiveMemoryWarning];
   //  self.changeGreeting.hidden = NO;
     // Dispose of any resources that can be recreated.
+    
 }
 
 - (IBAction)changeGreeting:(id)sender {
@@ -69,6 +72,7 @@
         }
         //配列の最後にendを入れる 12/12
         [_hairetu insertObject:@"end" atIndex:i];
+        self.again.hidden = NO;
     }
     //配列の中のランダムで選んだ位置の要素をとる
     NSString *greeting = [[NSString alloc] initWithFormat:@"%@",_hairetu[self.c]];
@@ -88,6 +92,10 @@
     self.countButton2 = 0;
     //配列の最後のendを消す
     [_hairetu removeLastObject];
+    
+
+    self.again.hidden = YES;
+    
     self.label.text = [NSString stringWithFormat:@"もう一回"];
 }
 //リセットボタンを押したときの動作
@@ -99,6 +107,7 @@
     self.label.text = [NSString stringWithFormat:@"リセット"];
     //出力ボタンを表示する。　12/15
     self.changeGreeting.hidden = NO;
+    
 }
 
 
