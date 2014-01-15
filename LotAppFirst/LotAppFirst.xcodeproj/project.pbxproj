@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		69394AA818850B54003A6DCF /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 69394AA718850B54003A6DCF /* Dice.m */; };
 		69E8A8CC187EF0F700A5131B /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A8CB187EF0F700A5131B /* Menu.m */; };
+		69F69C1E18858DA500D7645D /* SerialLot.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F69C1D18858DA500D7645D /* SerialLot.m */; };
 		EA13B4451843384D00E55580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA13B4441843384D00E55580 /* Foundation.framework */; };
 		EA13B4471843384D00E55580 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA13B4461843384D00E55580 /* CoreGraphics.framework */; };
 		EA13B4491843384D00E55580 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA13B4481843384D00E55580 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 		69394AA718850B54003A6DCF /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		69E8A8CA187EF0F700A5131B /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		69E8A8CB187EF0F700A5131B /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
+		69F69C1C18858DA500D7645D /* SerialLot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialLot.h; sourceTree = "<group>"; };
+		69F69C1D18858DA500D7645D /* SerialLot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerialLot.m; sourceTree = "<group>"; };
 		EA13B4411843384D00E55580 /* LotAppFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotAppFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA13B4441843384D00E55580 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA13B4461843384D00E55580 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +126,8 @@
 				EA13B4531843384D00E55580 /* AppDelegate.h */,
 				EA13B4541843384D00E55580 /* AppDelegate.m */,
 				EA13B4561843384D00E55580 /* Main.storyboard */,
+				69F69C1C18858DA500D7645D /* SerialLot.h */,
+				69F69C1D18858DA500D7645D /* SerialLot.m */,
 				69394AA618850B54003A6DCF /* Dice.h */,
 				69394AA718850B54003A6DCF /* Dice.m */,
 				EA13B4591843384D00E55580 /* ViewController.h */,
@@ -264,6 +269,7 @@
 				EA13B4551843384D00E55580 /* AppDelegate.m in Sources */,
 				69E8A8CC187EF0F700A5131B /* Menu.m in Sources */,
 				EA13B4511843384D00E55580 /* main.m in Sources */,
+				69F69C1E18858DA500D7645D /* SerialLot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
