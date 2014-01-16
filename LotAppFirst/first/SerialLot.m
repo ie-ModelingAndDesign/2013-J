@@ -39,22 +39,33 @@
 }
 
 - (IBAction)makeArray:(id)sender {
+    if ([self.elementStart.text isEqualToString:@""]) {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:@"入力値が不正です！"
+                              message:@"範囲が指定されていません。"
+                              delegate:self
+                              cancelButtonTitle:@"確認" otherButtonTitles:nil];
+        [alert show];
+        return;
+    } else if ([self.elementEnd.text isEqualToString:@""]) {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:@"入力値が不正です！"
+                              message:@"範囲が指定されていません。"
+                              delegate:self
+                              cancelButtonTitle:@"確認" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    if ([self.elementStart.text characterAtIndex:0] > [self.elementEnd.text characterAtIndex:0]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"入力値が不正です。！" message:@"範囲指定に誤りがあります。" delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
+    
     outputElement.text = [NSString stringWithFormat:@"？"];
     arrayIndex = 0;
     int j = 0;
     [lotElement removeAllObjects];
-    if ([self.elementStart.text isEqualToString:@""]) {
-        outputElement.text = [NSString stringWithFormat:@"入力値が不正です！"];
-        return;
-    } else if ([self.elementEnd.text isEqualToString:@""]) {
-        outputElement.text = [NSString stringWithFormat:@"入力値が不正です！"];
-        return;
-    }
-    if ([self.elementStart.text characterAtIndex:0] > [self.elementEnd.text characterAtIndex:0]) {
-        // 暫定的に、メッセージをラベルに表示
-        outputElement.text = [NSString stringWithFormat:@"入力値が不正です！"];
-        return;
-    }
     
     i = [self.elementEnd.text characterAtIndex:0] - [self.elementStart.text characterAtIndex:0];
     for (asciiCode = [self.elementStart.text characterAtIndex:0]; j <= i; j++) {
