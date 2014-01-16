@@ -43,11 +43,19 @@
     arrayIndex = 0;
     int j = 0;
     [lotElement removeAllObjects];
+    if ([self.elementStart.text isEqualToString:@""]) {
+        outputElement.text = [NSString stringWithFormat:@"入力値が不正です！"];
+        return;
+    } else if ([self.elementEnd.text isEqualToString:@""]) {
+        outputElement.text = [NSString stringWithFormat:@"入力値が不正です！"];
+        return;
+    }
     if ([self.elementStart.text characterAtIndex:0] > [self.elementEnd.text characterAtIndex:0]) {
         // 暫定的に、メッセージをラベルに表示
         outputElement.text = [NSString stringWithFormat:@"入力値が不正です！"];
         return;
     }
+    
     i = [self.elementEnd.text characterAtIndex:0] - [self.elementStart.text characterAtIndex:0];
     for (asciiCode = [self.elementStart.text characterAtIndex:0]; j <= i; j++) {
         [lotElement addObject:[NSString stringWithFormat:@"%c", asciiCode]];
@@ -60,6 +68,9 @@
         int n = arc4random_uniform(l) + m;
         [lotElement exchangeObjectAtIndex:m withObjectAtIndex:n];
     }
+    
+    self.elementStart.text =  [NSString stringWithFormat:@"%c",[self.elementStart.text characterAtIndex:0]];
+    self.elementEnd.text =  [NSString stringWithFormat:@"%c",[self.elementEnd.text characterAtIndex:0]];
 }
 
 - (IBAction)castLots:(id)sender {
@@ -77,5 +88,14 @@
 
 - (void)closeSoftKeyboard {
     [self.view endEditing: YES];
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == self.elementStart) {
+        [textField resignFirstResponder];
+    }
+    if (textField == self.elementEnd) {
+        [textField resignFirstResponder];
+    }
+    return YES;
 }
 @end

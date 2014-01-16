@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SerialLot : UIViewController {
+@interface SerialLot : UIViewController <UITextFieldDelegate> {
     int i;
     int arrayIndex;
     int asciiCode;
