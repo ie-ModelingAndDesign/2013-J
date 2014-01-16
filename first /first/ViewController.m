@@ -28,7 +28,7 @@
     
     _hairetu = [NSMutableArray arrayWithObjects:nil];
     self.again.hidden = YES;
-    self.output.hidden = YES;
+    //self.output.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +40,7 @@
 }
 
 - (IBAction)changeGreeting:(id)sender {
-    self.output.hidden = NO;
+    //self.output.hidden = NO;
     //入力した文字をuserNameに入れる
     self.userName = self.textField.text;
     //配列に要素を追加
@@ -99,7 +99,7 @@
     //出力ボタンを表示する。
     self.changeGreeting.hidden = NO;
     self.again.hidden = YES;
-    self.output.hidden = YES;
+    //self.output.hidden = YES;
     
 }
 
