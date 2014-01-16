@@ -43,6 +43,11 @@
     arrayIndex = 0;
     int j = 0;
     [lotElement removeAllObjects];
+    if ([self.elementStart.text characterAtIndex:0] > [self.elementEnd.text characterAtIndex:0]) {
+        // 暫定的に、メッセージをラベルに表示
+        outputElement.text = [NSString stringWithFormat:@"入力値が不正です！"];
+        return;
+    }
     i = [self.elementEnd.text characterAtIndex:0] - [self.elementStart.text characterAtIndex:0];
     for (asciiCode = [self.elementStart.text characterAtIndex:0]; j <= i; j++) {
         [lotElement addObject:[NSString stringWithFormat:@"%c", asciiCode]];
