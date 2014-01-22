@@ -18,6 +18,7 @@
 @synthesize again;
 @synthesize output;
 @synthesize hideResult;
+@synthesize finish;
 @synthesize userName = _userName;
 @synthesize hairetu = _hairetu;  //入力値を記憶
 @synthesize countButton;         //入力回数
@@ -26,12 +27,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     _hairetu = [NSMutableArray arrayWithObjects:nil];
     self.again.hidden = YES;
     self.output.hidden = YES;
     self.hideResult.hidden = YES;
+
+    self.finish.hidden = YES;
+    
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -39,10 +44,18 @@
     // Dispose of any resources that can be recreated.
     
 }
-
-- (IBAction)changeGreeting:(id)sender {
+//完了
+- (IBAction)finish:(id)sender {
     self.output.hidden = NO;
     self.hideResult.hidden = NO;
+    self.changeGreeting.hidden = YES;
+    self.finish.hidden = YES;
+}
+
+- (IBAction)changeGreeting:(id)sender {
+    self.finish.hidden = NO;
+    //self.output.hidden = NO;
+    //self.hideResult.hidden = NO;
     //入力した文字をuserNameに入れる
     self.userName = self.textField.text;
     //配列に要素を追加
@@ -56,7 +69,7 @@
     //出力ボタンを押したときの動作
 - (IBAction)Output:(id)sender {
     //格納ボタンを非表示にする。
-    self.changeGreeting.hidden = YES;
+    //self.changeGreeting.hidden = YES;
     self.hideResult.hidden = NO;
     //出力ボタン1回目に配列をシャッフル
     if (countButton2 == 0) {
@@ -108,7 +121,7 @@
 
 //隠すボタン
 - (IBAction)hideResult:(id)sender {
-    NSString *greeting = @"「出力」を押して";
+    NSString *greeting = @"「くじを引く」を押そう";
     self.label.text = greeting;
 }
 

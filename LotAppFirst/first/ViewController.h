@@ -13,16 +13,19 @@
     IBOutlet UIButton *again;
     IBOutlet UIButton *output;
     IBOutlet UIButton *hideResult;
+    IBOutlet UIButton *finish;
 }
 @property (retain,nonatomic) IBOutlet UIButton *changeGreeting;
 @property (retain,nonatomic) IBOutlet UIButton *again;
 @property (retain,nonatomic) IBOutlet UIButton *output;
 @property (retain,nonatomic) IBOutlet UIButton *hideResult;
+@property (retain,nonatomic) IBOutlet UIButton *finish;
 - (IBAction)changeGreeting:(id)sender;
 - (IBAction)Output:(id)sender;
 - (IBAction)again:(id)sender;
 - (IBAction)restart:(id)sender;
 - (IBAction)hideResult:(id)sender;
+- (IBAction)finish:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (copy,nonatomic) NSString *userName;
