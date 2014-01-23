@@ -11,9 +11,10 @@
 @interface SerialLot : UIViewController <UITextFieldDelegate> {
     int i;
     int arrayIndex;
-    int asciiCode;
+    int asciiCode, numberCount;
     NSMutableArray *lotElement;
     __weak IBOutlet UILabel *outputElement;
+    BOOL integralNumber;
 }
 - (IBAction)makeArray:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *elementStart;
