@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ev6-If-NQJ">
-                                <rect key="frame" x="111" y="334" width="98" height="30"/>
+                                <rect key="frame" x="105" y="335" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="ダイス&amp;コイン">
@@ -70,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="428" y="-55"/>
         </scene>
-        <!--View Controller - 任意くじ-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -194,7 +194,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="任意くじ" id="JHs-z6-0vg">
+                    <navigationItem key="navigationItem" id="JHs-z6-0vg">
                         <barButtonItem key="backBarButtonItem" title="元のページへ" id="Mif-qZ-6uU"/>
                     </navigationItem>
                     <connections>
@@ -212,7 +212,7 @@
             </objects>
             <point key="canvasLocation" x="982" y="-319"/>
         </scene>
-        <!--Serial Lot - 連番くじ-->
+        <!--Serial Lot-->
         <scene sceneID="SOS-Ye-mVT">
             <objects>
                 <viewController id="ZYd-le-I9o" customClass="SerialLot" sceneMemberID="viewController">
@@ -288,7 +288,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="連番くじ" id="cPt-59-ugL">
+                    <navigationItem key="navigationItem" id="cPt-59-ugL">
                         <barButtonItem key="backBarButtonItem" title="元のページへ" id="790-WJ-F2u"/>
                     </navigationItem>
                     <connections>
@@ -301,7 +301,7 @@
             </objects>
             <point key="canvasLocation" x="1325" y="-319"/>
         </scene>
-        <!--Dice - ダイス＆コイン-->
+        <!--Dice-->
         <scene sceneID="Wye-DL-tFM">
             <objects>
                 <viewController id="qkS-CE-ccL" customClass="Dice" sceneMemberID="viewController">
@@ -531,7 +531,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ダイス＆コイン" id="yHB-ju-Etd">
+                    <navigationItem key="navigationItem" id="yHB-ju-Etd">
                         <barButtonItem key="backBarButtonItem" title="元のページへ" id="W7E-Et-PWL"/>
                     </navigationItem>
                     <connections>
