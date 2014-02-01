@@ -14,6 +14,7 @@
 
 @implementation Dice
 @synthesize userName = _userName;
+@synthesize ShakeDice;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,7 +29,7 @@
 {
     [super viewDidLoad];
     Coin = [NSArray arrayWithObjects:@"表",@"裏", nil];
-    
+    self.ShakeDice.hidden = YES;
     //ResultList = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6", nil];
 }
 
@@ -39,12 +40,31 @@
 }
 
 - (IBAction)makedice:(id)sender {
+    BOOL b = FALSE;
     self.userName = self.sided.text;
     NSString *nameString = self.userName;
+    //何も入れなかったらaをいれる 2/1
     if ([nameString length] == 0) {
-        nameString = @"6";
+        nameString = @"a";
     }
+    //入力もじの先頭が数値(0以外)がどうか確かめる 2/1
+    NSString *str = [nameString substringToIndex:1];
+    const char *ch = [str cStringUsingEncoding:NSASCIIStringEncoding];
+    if ((ch[0] >=0x31) && (ch[0] <= 0x39)) {
+        b = TRUE;
+    } else{
+        b = FALSE;
+    }
+
+    if (b) {
     c=nameString.intValue;
+        //正しい数値のみダイス振るボタンだす 2/1
+        self.ShakeDice.hidden = NO;
+    }else{
+        c=6;
+        self.ShakeDice.hidden = YES;
+        //一桁目が数値以外ならサイコロふるボタン出さんようにする 2/1
+    }
     int m;
     //array1 = [NSMutableArray array];
     ResultList = [NSMutableArray array];
@@ -52,7 +72,6 @@
         //[array1 addObject:[NSNumber numberWithInteger:m]];
         [ResultList addObject:[NSNumber numberWithInteger:m]];
     }
-    
 }
 
 - (IBAction)ShakeDice:(id)sender {
