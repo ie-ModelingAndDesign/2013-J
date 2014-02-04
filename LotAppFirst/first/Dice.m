@@ -14,6 +14,7 @@
 
 @implementation Dice
 @synthesize userName = _userName;
+@synthesize ShakeDice;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -28,7 +29,7 @@
 {
     [super viewDidLoad];
     Coin = [NSArray arrayWithObjects:@"表",@"裏", nil];
-    
+    self.ShakeDice.hidden = YES;
     //ResultList = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6", nil];
 }
 
@@ -39,12 +40,31 @@
 }
 
 - (IBAction)makedice:(id)sender {
+    BOOL b = FALSE;
     self.userName = self.sided.text;
     NSString *nameString = self.userName;
+    //何も入れなかったらaをいれる 2/1
     if ([nameString length] == 0) {
-        nameString = @"6";
+        nameString = @"a";
     }
+    //入力もじの先頭が数値(0以外)がどうか確かめる 2/1
+    NSString *str = [nameString substringToIndex:1];
+    const char *ch = [str cStringUsingEncoding:NSASCIIStringEncoding];
+    if ((ch[0] >=0x31) && (ch[0] <= 0x39)) {
+        b = TRUE;
+    } else{
+        b = FALSE;
+    }
+
+    if (b) {
     c=nameString.intValue;
+        //正しい数値のみダイス振るボタンだす 2/1
+        self.ShakeDice.hidden = NO;
+    }else{
+        c=6;
+        self.ShakeDice.hidden = YES;
+        //一桁目が数値以外ならサイコロふるボタン出さんようにする 2/1
+    }
     int m;
     //array1 = [NSMutableArray array];
     ResultList = [NSMutableArray array];
@@ -52,7 +72,6 @@
         //[array1 addObject:[NSNumber numberWithInteger:m]];
         [ResultList addObject:[NSNumber numberWithInteger:m]];
     }
-    
 }
 
 - (IBAction)ShakeDice:(id)sender {
@@ -64,35 +83,35 @@
     RandomNumbers6 = arc4random() % c;
     if (kazu == 0) {
         show.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers]];
-        two.text = [NSString stringWithFormat: @"2個目"];
-        san.text = [NSString stringWithFormat: @"3個目"];
-        yon.text = [NSString stringWithFormat: @"4個目"];
-        go.text = [NSString stringWithFormat: @"5個目"];
-        six.text = [NSString stringWithFormat: @"6個目"];
+        two.text = [NSString stringWithFormat: @""];
+        san.text = [NSString stringWithFormat: @""];
+        yon.text = [NSString stringWithFormat: @""];
+        go.text = [NSString stringWithFormat: @""];
+        six.text = [NSString stringWithFormat: @""];
     }
     if (kazu == 1) {
         show.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers]];
         two.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers2]];
-        san.text = [NSString stringWithFormat: @"3個目"];
-        yon.text = [NSString stringWithFormat: @"4個目"];
-        go.text = [NSString stringWithFormat: @"5個目"];
-        six.text = [NSString stringWithFormat: @"6個目"];
+        san.text = [NSString stringWithFormat: @""];
+        yon.text = [NSString stringWithFormat: @""];
+        go.text = [NSString stringWithFormat: @""];
+        six.text = [NSString stringWithFormat: @""];
     }
     if (kazu == 2) {
         show.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers]];
         two.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers2]];
         san.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers3]];
-        yon.text = [NSString stringWithFormat: @"4個目"];
-        go.text = [NSString stringWithFormat: @"5個目"];
-        six.text = [NSString stringWithFormat: @"6個目"];
+        yon.text = [NSString stringWithFormat: @""];
+        go.text = [NSString stringWithFormat: @""];
+        six.text = [NSString stringWithFormat: @""];
     }
     if (kazu == 3) {
         show.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers]];
         two.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers2]];
         san.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers3]];
         yon.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers4]];
-        go.text = [NSString stringWithFormat: @"5個目"];
-        six.text = [NSString stringWithFormat: @"6個目"];
+        go.text = [NSString stringWithFormat: @""];
+        six.text = [NSString stringWithFormat: @""];
     }
     if (kazu == 4) {
         show.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers]];
@@ -100,7 +119,7 @@
         san.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers3]];
         yon.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers4]];
         go.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers5]];
-        six.text = [NSString stringWithFormat: @"6個目"];
+        six.text = [NSString stringWithFormat: @""];
     }
     if (kazu == 5) {
         show.text = [NSString stringWithFormat: @"%@",[ResultList objectAtIndex:RandomNumbers]];
@@ -144,31 +163,31 @@
     RandomNumbers11 = arc4random() % 2;
     if (kazu2 == 0) {
         show2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers7]];
-        two2.text = [NSString stringWithFormat: @"2枚目"];
-        san2.text = [NSString stringWithFormat: @"3枚目"];
-        yon2.text = [NSString stringWithFormat: @"4枚目"];
-        go2.text = [NSString stringWithFormat: @"5枚目"];
+        two2.text = [NSString stringWithFormat: @""];
+        san2.text = [NSString stringWithFormat: @""];
+        yon2.text = [NSString stringWithFormat: @""];
+        go2.text = [NSString stringWithFormat: @""];
     }
     if (kazu2 == 1) {
         show2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers7]];
         two2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers8]];
-        san2.text = [NSString stringWithFormat: @"3枚目"];
-        yon2.text = [NSString stringWithFormat: @"4枚目"];
-        go2.text = [NSString stringWithFormat: @"5枚目"];
+        san2.text = [NSString stringWithFormat: @""];
+        yon2.text = [NSString stringWithFormat: @""];
+        go2.text = [NSString stringWithFormat: @""];
     }
     if (kazu2 == 2) {
         show2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers7]];
         two2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers8]];
         san2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers9]];
-        yon2.text = [NSString stringWithFormat: @"4枚目"];
-        go2.text = [NSString stringWithFormat: @"5枚目"];
+        yon2.text = [NSString stringWithFormat: @""];
+        go2.text = [NSString stringWithFormat: @""];
     }
     if (kazu2 == 3) {
         show2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers7]];
         two2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers8]];
         san2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers9]];
         yon2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers10]];
-        go2.text = [NSString stringWithFormat: @"5枚目"];
+        go2.text = [NSString stringWithFormat: @""];
     }
     if (kazu2 == 4) {
         show2.text = [NSString stringWithFormat: @"%@",[Coin objectAtIndex:RandomNumbers7]];

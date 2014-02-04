@@ -10,9 +10,6 @@
 		69394AA818850B54003A6DCF /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 69394AA718850B54003A6DCF /* Dice.m */; };
 		69E8A8CC187EF0F700A5131B /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E8A8CB187EF0F700A5131B /* Menu.m */; };
 		69F69C1E18858DA500D7645D /* SerialLot.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F69C1D18858DA500D7645D /* SerialLot.m */; };
-		77E983D918A0CF3D004E7D4F /* くじ.png in Resources */ = {isa = PBXBuildFile; fileRef = 77E983D818A0CF3D004E7D4F /* くじ.png */; };
-		77E983DB18A0CF56004E7D4F /* サイコロ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 77E983DA18A0CF56004E7D4F /* サイコロ.jpeg */; };
-		77E983DD18A0CF6C004E7D4F /* コイン.png in Resources */ = {isa = PBXBuildFile; fileRef = 77E983DC18A0CF6C004E7D4F /* コイン.png */; };
 		EA13B4451843384D00E55580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA13B4441843384D00E55580 /* Foundation.framework */; };
 		EA13B4471843384D00E55580 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA13B4461843384D00E55580 /* CoreGraphics.framework */; };
 		EA13B4491843384D00E55580 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA13B4481843384D00E55580 /* UIKit.framework */; };
@@ -46,9 +43,6 @@
 		69E8A8CB187EF0F700A5131B /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		69F69C1C18858DA500D7645D /* SerialLot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerialLot.h; sourceTree = "<group>"; };
 		69F69C1D18858DA500D7645D /* SerialLot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerialLot.m; sourceTree = "<group>"; };
-		77E983D818A0CF3D004E7D4F /* くじ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "くじ.png"; sourceTree = "<group>"; };
-		77E983DA18A0CF56004E7D4F /* サイコロ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "サイコロ.jpeg"; sourceTree = "<group>"; };
-		77E983DC18A0CF6C004E7D4F /* コイン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "コイン.png"; sourceTree = "<group>"; };
 		EA13B4411843384D00E55580 /* LotAppFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotAppFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA13B4441843384D00E55580 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EA13B4461843384D00E55580 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,9 +133,6 @@
 				EA13B4591843384D00E55580 /* ViewController.h */,
 				EA13B45A1843384D00E55580 /* ViewController.m */,
 				EA13B45C1843384D00E55580 /* Images.xcassets */,
-				77E983D818A0CF3D004E7D4F /* くじ.png */,
-				77E983DC18A0CF6C004E7D4F /* コイン.png */,
-				77E983DA18A0CF56004E7D4F /* サイコロ.jpeg */,
 				EA13B44B1843384D00E55580 /* Supporting Files */,
 			);
 			path = first;
@@ -252,10 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77E983DD18A0CF6C004E7D4F /* コイン.png in Resources */,
-				77E983DB18A0CF56004E7D4F /* サイコロ.jpeg in Resources */,
 				EA13B45D1843384D00E55580 /* Images.xcassets in Resources */,
-				77E983D918A0CF3D004E7D4F /* くじ.png in Resources */,
 				EA13B44F1843384D00E55580 /* InfoPlist.strings in Resources */,
 				EA13B4581843384D00E55580 /* Main.storyboard in Resources */,
 			);
