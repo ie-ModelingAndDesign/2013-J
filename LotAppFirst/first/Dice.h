@@ -10,7 +10,6 @@
 
 @interface Dice : UIViewController <UITextFieldDelegate> {
     NSMutableArray *ResultList;
-    IBOutlet UIButton *ShakeDice;
     //NSMutableArray *array1;
     int RandomNumbers;
     int RandomNumbers2;
@@ -47,7 +46,6 @@
 }
 @property (weak, nonatomic) IBOutlet UITextField *sided;
 @property (copy,nonatomic) NSString *userName;
-@property (retain,nonatomic) IBOutlet UIButton *ShakeDice;
 - (IBAction)makedice:(id)sender;
 - (IBAction)ShakeDice:(id)sender;
 - (IBAction)kosuu:(id)sender;
