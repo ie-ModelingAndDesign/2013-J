@@ -29,8 +29,14 @@
 {
     [super viewDidLoad];
     Coin = [NSArray arrayWithObjects:@"表",@"裏", nil];
-    self.ShakeDice.hidden = YES;
+    self.ShakeDice.hidden = NO;
     //ResultList = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6", nil];
+    c=6;
+    int m;
+    ResultList = [NSMutableArray array];
+    for (m=1; m<=c; m++){
+        [ResultList addObject:[NSNumber numberWithInt:m]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
