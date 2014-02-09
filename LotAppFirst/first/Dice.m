@@ -25,17 +25,21 @@
 }
 
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     Coin = [NSArray arrayWithObjects:@"表",@"裏", nil];
+    //初めからダイス振るボタンを出す
     self.ShakeDice.hidden = NO;
-    //ResultList = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6", nil];
+    //デフォルトで6面サイコロ
     c=6;
     int m;
     ResultList = [NSMutableArray array];
     for (m=1; m<=c; m++){
         [ResultList addObject:[NSNumber numberWithInt:m]];
+        
     }
 }
 
@@ -62,6 +66,7 @@
         b = FALSE;
     }
 
+    
     if (b) {
     c=nameString.intValue;
         //正しい数値のみダイス振るボタンだす 2/1
